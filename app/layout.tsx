@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col md:flex-row h-screen">
-          <main className="flex-1 flex flex-col">
+        <div className="flex flex-col md:flex-row h-screen w-full overflow-x-hidden">
+          <main className="flex-1 flex flex-col w-full overflow-x-hidden">
             <Navbar />
             <div className="flex-1">{children}</div>
           </main>

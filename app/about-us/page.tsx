@@ -15,13 +15,13 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="md:w-[40%] p-4 md:p-12">
+      <div className="md:w-[40%] p-4 md:p-12 overflow-y-scroll">
         <h1 className="mb-12">Our Vision</h1>
 
         <div className="vision-item">
-          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg inline-flex items-center justify-center text-white">01</div>
+          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg flex items-center justify-center text-white w-12 h-12">01</div>
           <div>
-            <h3 className="text-xl font-bold text-[#29506b] mb-2">Innovation & Growth Focus:</h3>
+            <h3 className="text-xl font-bold text-[#29506b] mb-2">Innovation & Growth Focus</h3>
             <p className="text-gray-700">
               To be a leading digital solutions partner, empowering businesses with innovative marketing, branding, and
               web solutions that drive sustainable growth in the digital era.
@@ -30,7 +30,7 @@ export default function AboutUs() {
         </div>
 
         <div className="vision-item">
-          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg inline-flex items-center justify-center text-white">02</div>
+          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg inline-flex items-center justify-center text-white w-12 h-12">02</div>
           <div>
             <h3 className="text-xl font-bold text-[#29506b] mb-2">Customer-Centric Focus</h3>
             <p className="text-gray-700">
@@ -41,7 +41,7 @@ export default function AboutUs() {
         </div>
 
         <div className="vision-item">
-          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg inline-flex items-center justify-center text-white">03</div>
+          <div className="rounded-full bg-[#29506b] p-3 self-start font-bold text-lg inline-flex items-center justify-center text-white w-12 h-12">03</div>
           <div>
             <h3 className="text-xl font-bold text-[#29506b] mb-2">Industry Leadership Focus</h3>
             <p className="text-gray-700">
@@ -52,7 +52,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-0 w-32 h-32 bg-teal-500 rounded-full opacity-20 -mr-10 -mb-10"></div>
+      <div className="fixed bottom-0 right-0 w-32 h-32 bg-teal-500 rounded-full opacity-20 -mr-10 -mb-10"></div>
     </div>
   )
 }

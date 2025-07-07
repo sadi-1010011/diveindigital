@@ -5,10 +5,11 @@ import { useState } from "react"
 import { Menu } from "lucide-react"
 import Image from "next/image"
 import Logo from "@/public/images/logo.png";
+import { usePathname } from "next/navigation"
 
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="p-4 md:p-6 flex justify-between items-center">
@@ -21,11 +22,11 @@ export default function Navbar() {
 
       <div className="hidden md:flex items-center space-x-8">
         <NavLinks />
-        <div className="flex space-x-1">
+        {/* <div className="flex space-x-1">
           <div className="w-2 h-2 rounded-full bg-blue-800"></div>
           <div className="w-2 h-2 rounded-full bg-blue-800"></div>
           <div className="w-2 h-2 rounded-full bg-blue-800"></div>
-        </div>
+        </div> */}
       </div>
 
       <div className="md:hidden">
@@ -46,19 +47,22 @@ export default function Navbar() {
 }
 
 function NavLinks() {
+  
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
   return (
     <>
-      <Link href="/" className="text-gray-700 hover:text-blue-800 transition-colors">
+      <Link href="/" className={`text-gray-700 hover:text-blue-800 transition-colors ${isActive("/") ? "font-bold" : ""}`}>
         Home
       </Link>
-      <Link href="/service" className="text-gray-700 hover:text-blue-800 transition-colors">
-        Service
+      <Link href="/service" className={`text-gray-700 hover:text-blue-800 transition-colors ${isActive("/service") ? "font-bold" : ""}`}>
+        Services
       </Link>
-      <Link href="/about-us" className="text-gray-700 hover:text-blue-800 transition-colors">
+      <Link href="/about-us" className={`text-gray-700 hover:text-blue-800 transition-colors ${isActive("/about-us") ? "font-bold" : ""}`}>
         About Us
       </Link>
-      <Link href="/contact" className="text-gray-700 hover:text-blue-800 transition-colors">
-        Contact
+      <Link href="/contact" className={`text-gray-700 hover:text-blue-800 transition-colors ${isActive("/contact") ? "font-bold" : ""}`}>
+        Contact Us
       </Link>
     </>
   )

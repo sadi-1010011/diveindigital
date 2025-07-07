@@ -15,7 +15,7 @@ export default function ServicePage() {
 export function Service1() {
   return (
     <div className="p-4 md:p-12 relative">
-      <h1 className="text-center mb-12">Our Service</h1>
+      <h1 className="text-center mb-12">Our Services</h1>
 
       <div className="absolute w-full h-1/3 bottom-0 left-0 right-0 bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
 
@@ -60,7 +60,7 @@ export function Service1() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-0 w-32 h-32 bg-teal-500 rounded-full opacity-20 -mr-10 -mb-10"></div>
+      <div className="fixed bottom-0 right-0 w-32 h-32 bg-teal-500 rounded-full opacity-20 -mr-10 -mb-10"></div>
     </div>
   )
 }
@@ -68,7 +68,7 @@ export function Service1() {
 export function Service2() {
   return (
     <div className="p-4 md:p-12 relative min-h-screen bg-white">
-      <h1 className="text-center mb-12">Our Service</h1>
+      {/* <h1 className="text-center mb-12">Our Service</h1> */}
 
       <div className="absolute w-full h-1/2 bottom-0 left-0 right-0 bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
 
@@ -115,7 +115,7 @@ focus on quality over quantity, we optimize lead generation campaigns to maximiz
 export function Service3() {
   return (
     <div className="p-4 md:p-12 relative min-h-screen bg-white">
-      <h1 className="text-center mb-12">Our Service</h1>
+      {/* <h1 className="text-center mb-12">Our Service</h1> */}
 
       <div className="absolute w-full h-1/3 bottom-0 left-0 right-0 bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
 
@@ -159,7 +159,7 @@ crowded digital space and builds meaningful relationships with followers.
 export function Service4() {
   return (
     <div className="p-4 md:p-12 relative min-h-screen bg-white">
-      <h1 className="text-center mb-12">Our Service</h1>
+      {/* <h1 className="text-center mb-12">Our Service</h1> */}
 
       <div className="absolute w-full h-1/3 bottom-0 left-0 right-0 bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
 
@@ -229,7 +229,7 @@ export function OurClients() {
           <Image src="/images/38.jpg" alt="Website Design Service" fill className="object-cover" />
         </div>
         <div className="relative h-[30vh] overflow-hidden">
-          <Image src="/images/39.jpg" alt="Branding Service" fill className="object-cover" />
+          <Image src="/images/39.png" alt="Branding Service" fill className="object-cover" />
         </div>
         <div className="relative h-[30vh] overflow-hidden">
           <Image src="/images/40.jpg" alt="Content Creation Service" fill className="object-cover" />
