@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import Logo from "@/public/images/logo.png";
 import { usePathname } from "next/navigation"
@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="p-4 md:p-6 flex justify-between items-center">
+    <nav className="p-4 md:p-6 flex justify-between items-center z-10">
       {/* LOGO */}
       <Link href="/" className="block">
         <div className="absolute top-3 left-3 md:left-3 md:top-3 z-10">
@@ -31,7 +31,7 @@ export default function Navbar() {
 
       <div className="md:hidden">
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-          <Menu size={24} />
+          { !isMenuOpen ? <Menu size={24} /> : <X size={24} /> }
         </button>
       </div>
 

@@ -4,18 +4,18 @@ export default function Home() {
   return (
     <div className="flex flex-col p-4 md:p-0 h-screen w-full overflow-hidden">
 
-      <div className="fixed top-0 w-[28%] -left-[3%] h-[120vh] bottom-0 md:w-[28%] bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
+      <div className="fixed top-0 w-[32%] -left-[3%] h-[120vh] bottom-0 md:w-[28%] bg-gradient-to-b from-[#7a9fa1] to-[#29506b] text-white p-6"></div>
 
       <div className="md:w-[40%] sm:w-[20%] relative -left-20 top-28 md:top-28 md:-left-20 scale-125">
       </div>
 
     {/* floating hero image */}
-    <div className="absolute top-1/2 left-[25%] -translate-y-1/2 -translate-x-1/2 w-[200px] h-[200px] md:w-[300px] lg:w-[500px] aspect-square md:h-auto overflow-hidden rounded-full md:rounded-none z-10">
+    <div className="absolute top-1/2 left-[25%] -translate-y-1/2 -translate-x-1/2 w-[150px] h-[150px] md:w-[300px] lg:w-[500px] aspect-square md:h-auto overflow-hidden rounded-full md:rounded-none z-10">
       <div className="absolute aspect-square inset-0 w-full h-full rounded-full">
         <Image src="/images/hero.png"
           alt="Team working together"
           fill
-          className="object-cover rounded-full aspect-square p-3 bg-white"
+          className="object-cover rounded-full aspect-square p-2 md:p-3 lg:p-3 bg-white"
           priority
         />
       </div>
